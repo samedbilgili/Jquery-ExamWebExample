@@ -1,0 +1,323 @@
+@charset "utf-8";
+:root {
+    --mGri: #7e889a;
+    --pYesil: #3ecb99;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.menu {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu li {
+    float: left;
+    padding: 5px 25px;
+    color: black;
+    margin-left: 10px;
+    border: 1px solid rgb(211, 209, 209);
+}
+
+.soru-icerik {
+    min-height: 400px;
+    height: auto;
+    padding-top: 10px;
+}
+
+.soru-alt-yonetim {
+    box-shadow: 0px 0px 4px 0px #b1aaaa;
+    text-align: center;
+    height: 40px;
+    padding: 0px;
+}
+
+.soru-alt-yonetim div {
+    padding: 0px;
+}
+
+.soru-sag-tabs {
+    box-shadow: 0px 0px 4px 0px #b1aaaa;
+    min-height: 400px;
+    height: auto;
+}
+
+#soru-div {
+    padding: 10px 0px;
+}
+
+#soru-div .img-div {
+    width: 100%;
+    float: left;
+}
+
+#soru-div .img-div img {
+    max-width: 100%;
+    max-height: 120px;
+    margin-right: 0px;
+    width: 48%;
+    margin-left: 1%;
+    float: left;
+}
+
+.soru-metni {
+    font-size: 19px;
+}
+
+.cevap {
+    background-color: white;
+    min-height: 46px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 4px 0px #b1aaaa;
+    padding-left: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.cevap:hover {
+    background-color: var(--pYesil);
+}
+
+.cevap.active {
+    background-color: var(--mGri);
+    color: white;
+}
+
+.cevap span {
+    font-size: 30px;
+}
+
+.soru-sag-tabs {
+    padding-top: 10px;
+}
+
+.soru-tabs-div {
+    padding: 10% 10%;
+}
+
+.soru-sol-content {
+    width: 100%;
+    background-color: var(--mGri);
+}
+
+.soru-tabs-div .sorutab {
+    width: 11%;
+    float: left;
+    border: solid var(--mGri) 1px;
+    background-color: var(--mGri);
+    margin-left: 5%;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.soru-tabs-div .sorutab.secildi {
+    background-color: var(--mGri);
+    border-color: var(--mGri);
+    color: white;
+}
+
+.soru-tabs-div .sorutab.active {
+    background-color: var(--pYesil);
+    border-color: var(--pYesil);
+    color: white;
+}
+
+.soru-sag-tabs {
+    background-color: #181e26;
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: none;
+}
+
+.sinavadi {
+    border-bottom: solid var(--mGri) 2px;
+    padding: 50px 30px;
+}
+
+.sinavadi h3 {
+    color: var(--mGri);
+    text-align: center;
+}
+
+.buttons-div {
+    padding: 30px 50px;
+    border-bottom: solid var(--mGri) 2px;
+}
+
+.btnSagTabsAc {
+    display: inline-block !important;
+    color: var(--pYesil);
+}
+
+.btnSagTabsKapat {
+    position: sticky;
+    left: 100%;
+    display: inline-block !important;
+    color: var(--pYesil);
+    padding: 20px;
+    font-size: 30px;
+}
+
+.soru-alt-yonetim i {
+    padding-top: 0.375rem;
+    display: inline-block;
+}
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {}
+
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+    body {
+        background-color: #f8f9fa;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .menu {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    .menu li {
+        float: left;
+        padding: 5px 25px;
+        color: black;
+        margin-left: 10px;
+        border: 1px solid rgb(211, 209, 209);
+    }
+    .soru-icerik {
+        min-height: 400px;
+        height: auto;
+        padding-top: 10px;
+    }
+    .soru-alt-yonetim {
+        box-shadow: 0px 0px 4px 0px #b1aaaa;
+        text-align: center;
+        height: 40px;
+        padding-top: 0px;
+    }
+    .soru-sag-tabs {
+        box-shadow: 0px 0px 4px 0px #b1aaaa;
+        min-height: 400px;
+        height: auto;
+    }
+    #soru-div {
+        padding: 10px 70px;
+    }
+    #soru-div .img-div {
+        width: 100%;
+        float: left;
+    }
+    #soru-div .img-div img {
+        max-width: 100%;
+        max-height: 120px;
+        margin-right: 10px;
+        width: auto;
+        margin-left: 0%;
+        float: left;
+    }
+    .soru-metni {
+        font-size: 22px;
+    }
+    .cevap {
+        background-color: white;
+        min-height: 46px;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0px 0px 4px 0px #b1aaaa;
+        padding-left: 10px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    .cevap:hover {
+        background-color: var(--pYesil);
+    }
+    .cevap.active {
+        background-color: var(--mGri);
+        color: white;
+    }
+    .cevap span {
+        font-size: 30px;
+    }
+    .soru-sag-tabs {
+        padding-top: 10px;
+    }
+    .soru-tabs-div {
+        padding: 10% 10%;
+    }
+    .soru-sol-content {
+        width: 72.5%;
+        background-color: var(--mGri);
+    }
+    .soru-tabs-div .sorutab {
+        width: 11%;
+        float: left;
+        border: solid var(--mGri) 1px;
+        background-color: var(--mGri);
+        margin-left: 5%;
+        text-align: center;
+        color: black;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    .soru-tabs-div .sorutab.secildi {
+        background-color: var(--mGri);
+        border-color: var(--mGri);
+        color: white;
+    }
+    .soru-tabs-div .sorutab.active {
+        background-color: var(--pYesil);
+        border-color: var(--pYesil);
+        color: white;
+    }
+    .soru-sag-tabs {
+        background-color: #181e26;
+        position: fixed;
+        right: 0;
+        height: 100%;
+        width: 27.5%;
+        padding: 0px;
+        margin: 0px;
+        display: block;
+    }
+    .sinavadi {
+        border-bottom: solid var(--mGri) 2px;
+        padding: 50px 30px;
+    }
+    .sinavadi h3 {
+        color: var(--mGri);
+        text-align: center;
+    }
+    .buttons-div {
+        padding: 30px 50px;
+        border-bottom: solid var(--mGri) 2px;
+    }
+    .btnSagTabsAc {
+        display: none !important;
+    }
+    .btnSagTabsKapat {
+        display: none !important;
+    }
+    .soru-alt-yonetim i {
+        padding-top: 0.375rem;
+        display: inline-block;
+    }
+}
